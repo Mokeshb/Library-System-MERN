@@ -49,8 +49,8 @@ function AdminDashboard() {
                 {/* Sidebar */}
                 <div className={sidebar ? "dashboard-options active" : "dashboard-options"}>
                     <div className='dashboard-logo'>
-                        <LibraryBooksIcon style={{ fontSize: 50 }} />
-                        <p className="logo-name">LCMS</p>
+                        <LibraryBooksIcon style={{ fontSize: 0 }} />
+                        <p className="logo-name">Umassd</p>
                     </div>
                     <p className={`dashboard-option ${active === "profile" ? "clicked" : ""}`} onClick={() => { setActive("profile"); setSidebar(false) }}><AccountCircleIcon className='dashboard-option-icon' /> Profile</p>
                     <p className={`dashboard-option ${active === "addbook" ? "clicked" : ""}`} onClick={() => { setActive("addbook"); setSidebar(false) }}><BookIcon className='dashboard-option-icon' />Add Book</p>
